@@ -115,7 +115,7 @@ footer
     display: flex;
     flex-direction: column;
     font-weight: 200;
-    margin-top: 20px;
+    margin-top: auto;
     color: #fff;
 }
 .footer-top
