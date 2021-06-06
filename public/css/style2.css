@@ -1,0 +1,397 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;400;900&display=swap');    */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+ body{
+    display: flex;
+    flex-direction: column;
+} 
+.cart{
+   display: flex;
+   margin:  3% auto;     
+   flex-wrap: wrap; 
+   width: 84%;
+   margin-top: 19px;  
+   background-color:#1e272e;
+   border-radius: 10px 10px 10px 10px;
+   padding: 1%;
+}
+.left-s{
+flex: 35%;
+padding: 10px;
+border-radius: 10px 20px 20px 10px; 
+box-shadow: 0px 0px 1px 0px #384955;
+background-image: url(/ico/back-left-s.jpg);
+background-size: cover;  
+background-position: center center;
+background-repeat: no-repeat; 
+background-attachment: fixed;
+transition: 1s ;
+}
+.left-s:hover{
+    transition: 1s;
+    cursor: pointer;
+    box-shadow: 2px 3px 15px -3px rgba(0,0,0,0.95);
+    transform: translate3d(0px, -1px, 1px);
+}
+.right-s{
+flex: 65%;
+padding: 10px;
+border-radius: 0px 10px 10px 0px; 
+}
+.date-btn-C-and-F{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: -5px;
+}
+.Location_Maxmin{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 1%;
+    width: 100%;
+}
+ .Location{
+    width: 100%;
+    margin-top: 5px;
+}
+ .Location p{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #fff;
+}   
+.m-Min{
+    width: 100%;
+    margin-top: 5px;
+}
+ .m-Min p{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #fff;
+} 
+.side1{
+    flex: 50%;
+}
+.side2{
+    flex: 50%;
+}
+
+.d_date p{
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    display: flex;
+    font-size: 1.3rem;
+    align-items: center;
+    color: #fff;
+    font-weight: 400;
+    margin: 3%;
+}
+
+.btn_c_f{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.b-c,.b-f{
+    width: 40px;
+    height:35px;
+    border: none;
+    border-radius: 5px;
+}
+.info2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.weather-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.weather-icon img{
+    width: 120px;
+    height: 120px;
+} 
+span{
+    font-family: 'Montserrat', sans-serif;
+}
+.temperature-description p{
+    margin: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 300;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.temperature-value{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+.temperature-value p{
+    font-size: 5.5rem;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+.sunset-sunrise{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    justify-content:space-evenly;
+}
+.sunset ,.sunrise{
+    width: 40px;
+    height:35px;
+    border: none;
+    border-radius: 5px;
+}
+.time-s-r{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content:space-evenly;
+    color: #fff;
+}
+#sun,#rise{
+    text-align: center;
+    width: 40px;
+    height:25px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+/* info3 */
+.info3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+.info3E{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+h5{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+h5:hover{
+    color: rgb(18, 177, 250);
+    text-shadow: 0.9px 1px #3f6479;
+}
+.fa-wind{
+    color: rgb(18, 177, 250);
+    margin-top: 8px;
+    width: 15px;
+}
+.info3C{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+#wind-N ,#hum-N,#Uv-index{
+    color: #fff;
+    margin-top: 5px;
+    margin-right: 10px;
+    font-size: 1.1rem;
+    font-family: "Raleway", sans-serif;
+}
+#Visble-N{
+    color: #fff;
+    font-size: 1.1rem;
+    margin-top: 5px;
+    font-family: "Raleway", sans-serif;}
+.windSpeedI,.Humi{
+    display: flex;
+} 
+
+ /* end of info3 */
+.Forecast {
+    justify-content: space-evenly;
+    margin-top: 20px; 
+     color: #fff; 
+    
+}
+.forecast-temp{
+    margin-top: 10px;
+}
+.forecast-temp,.FormatDate{
+    display: flex;
+    justify-content: center;
+}
+.forecast-icon{
+    margin-top: 10px;
+}
+.forecast-icon img{
+    width: 50px;
+    height: 50px;
+}
+.vl {
+    border-left: 1px solid rgb(209, 221, 209);
+    height: 40px;
+    margin-top: 40px;
+  }
+@media screen and (min-width:700px){
+    .cart{
+      display: flex;
+      align-self: center;
+    }
+    
+}
+ @media screen and (max-width:980px){
+    .left-s{
+        border-radius: 10px 10px 20px 20px;
+    }
+} 
+ /*left  */
+#Tite{
+    color: #fff;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 5px;
+    word-spacing: 5px;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+}
+.left-E {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.Search-bar{
+    display:flex;
+    justify-content: center;
+    position: relative; 
+    margin-top: 40px;  
+    width:280px;
+    height: 35px;
+}
+.city-n {
+    background: #fff;
+    width: 210px;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    border-radius:25px 0 0 25px;
+    height: 36px;
+}
+.search-s {
+    position: relative; 
+    border-radius:0 25px 25px 0;
+    left: -5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #0097e6;
+    color: white;
+    width: 55px;
+    height: 36px;
+}
+.today-date{
+    display: flex;
+    align-self: center;
+    align-items: center;
+    margin-left: 50px;
+}
+#Today{
+    color: #fff;
+    margin-top:20px; 
+    font-size: 2rem;
+    font-weight: 500;
+    margin-right: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+#dateT ,.current-time{
+    color: #0097e6;
+     margin-top:28px;  
+    font-size:1.2rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+} 
+.TodayInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+}
+.ImgW{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-top: -20px;
+}
+.ImgW img{
+    height: 120px;
+    width: 130px;
+    
+}
+.Statue p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.location-name{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 13px;
+}
+.location-name img{
+    display: flex;
+    align-self: flex-start;
+    
+}
+#city-name{
+    font-size: 1.2rem;
+    display: flex;
+    margin-top: 7px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.Today-max_min p{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+.Today-max_min p:hover,.current-temp p:hover,#city-name:hover,.Statue p:hover{
+   color:#0097e6;
+}
+.current-temp p{
+    display: flex;
+    justify-content: center;
+    font-size: 3.3rem;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}

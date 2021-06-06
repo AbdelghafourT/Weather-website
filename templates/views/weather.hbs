@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      {{>headerlink}}  
+    <link rel="stylesheet" href="css/style2.css">    
+</head>
+<body>
+     {{>navbar}} 
+    <!-- main header -->
+   
+    <div class="cart">
+        {{!-- left --}}
+        <div class="left-s">
+               <h4 id="Tite">The Only <span style="color: #0097e6;">Weather</span> Forecast You Need</h4>
+               <br>
+            <div class="left-E">
+                <div class="Search-bar">
+                    <form>
+                        <input class="city-n" type="text" placeholder="Enter your city">
+                        <button class="search-s">Search</button>
+                    </form>
+                </div>
+            </div>
+            <div class="today-date">
+              <h4 class="current-time">00:32</h4>
+               <h4 id="dateT">,July 21'</h4> 
+            </div>
+            <div class="TodayInfo">
+                <div class="side1">
+                    <div class="ImgW"><img src="/animated/01d.svg" alt=""></div>
+                    <div class="Statue"><p>Clouds</p></div>
+                </div>
+                <div class="side2">
+                    <div class="Today-max_min"><p>12° 20°</p></div>
+                    <div class="current-temp"><p>34°C</p></div>
+                    <div class="location-name">
+                        <img src="/ico/location.svg" alt=""><span ><p id="city-name">Casablanca</p></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-s">
+             <div class="wrapper"> 
+                <div class="date-btn-C-and-F">
+                    <div class="side1">
+                        <div class="d_date">
+                            <p>Monday 27,July'20</p>
+                        </div>
+                    </div>
+                        <div class="side2"> 
+                            <div class="btn_c_f">
+                                <button class="b-c">°C</button>|<button class="b-f">°F</button>
+                            </div>
+                       </div> 
+                </div>
+                <div class="Location_Maxmin">
+                    <div class="side1">
+                        <div class="Location">
+                            <p>Tit Mellil, MA</p>
+                        </div>
+                    </div>
+                    <div class="side2"><div class="m-Min"><p>12° 20°</p></div></div>
+                </div>
+                 <div class="info2">
+                    <div class="side1">
+                        <div class="weather-icon">
+                            <img id="im" src="./animated/01n.svg" alt=" ">
+                        </div>
+                        <div class="temperature-description">
+                            <p>scattered clouds</p>
+                        </div>                     
+                    </div>
+                    <div class="side2">
+                        <div class="temperature-value">
+                            <p>19°<span>C</span></p>
+                        </div>
+                        <div class="sunset-sunrise">
+                             <img class="sunset" src="/im/4.svg" alt=""><img class="sunrise" src="/im/3.svg"  alt="">
+                        </div>
+                        <div class="time-s-r"><h5 id="sun">19:04</h5><h5 id="rise">05.55</h5></div>
+                    </div>
+                 </div>
+
+                <div class="info3">
+                    <div class="side1">
+                        <div class="info3E">
+                            <h5>Wind Speed</h5>&nbsp;<h5>Humidity</h5>
+                        </div>
+                        <div class="info3C">
+                            <div class="windSpeedI"><i class="fas fa-wind"></i><span>
+                                    <p id="wind-N">2.8km/h</p>
+                                </span></div>
+                            <div class="Humi">
+                                <p id="hum-N">66%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side2">
+                        <div class="info3E">
+                            <h5>UV index</h5>&nbsp;<h5>Visibility</h5>
+                        </div>
+                        <div class="info3C">
+                            <div class="UV">
+                                <p id="Uv-index" style="color: red;">8.29</p>
+                            </div>
+                            <div class="visbleT">
+                                <p id="Visble-N">20km</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+             </div> 
+            <div class="Forecast row">
+                <div class="ForecastInfo">
+                    <div class="col forecast-info">
+                        <div class="forecast-day ">
+                            <div class="FormatDate d0">Mon</div>
+                        </div>
+                        <div class="forecast-icon"><img src="/animated/01d.svg"  id="im0" alt="clear sky"></div>
+                        <div class="forecast-temp" id="tem0">19°/21°</div>
+                    </div>
+                </div>
+                <div class="vl"></div>
+                <div class="ForecastInfo">
+                    <div class="col forecast-info">
+                        <div class="forecast-day">
+                            <div class="FormatDate d1">Tue</div>
+                        </div>
+                        <div class="forecast-icon"><img src="/animated/04n.svg"  id="im1" alt="broken clouds"></div>
+                        <div class="forecast-temp" id="tem1">18°/18°</div>
+                    </div>
+                </div>
+                <div class="vl"></div>
+                <div class="ForecastInfo">
+                    <div class="col forecast-info">
+                        <div class="forecast-day">
+                            <div class="FormatDate d2">Wed</div>
+                        </div>
+                        <div class="forecast-icon"><img src="/animated/13n.svg"  id="im2" alt="overcast clouds"></div>
+                        <div class="forecast-temp" id="tem2">18°/18°</div>
+                    </div>
+                </div>
+                <div class="vl"></div>
+                <div class="ForecastInfo">
+                    <div class="col forecast-info">
+                        <div class="forecast-day">
+                            <div class="FormatDate d3">Thu</div>
+                        </div>
+                        <div class="forecast-icon"><img src="/animated/04n.svg" id="im3" alt="overcast clouds"></div>
+                        <div class="forecast-temp" id="tem3">19°/19°</div>
+                    </div>
+                </div>
+                <div class="vl"></div>
+                <div class="ForecastInfo">
+                    <div class="col forecast-info">
+                        <div class="forecast-day">
+                            <div class="FormatDate d4">Fri</div>
+                        </div>
+                        <div class="forecast-icon"><img src="/animated/50d.svg"  id="im4" alt="broken clouds"></div>
+                        <div class="forecast-temp" id="tem4">20°/20°</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       {{!-- https://openweathermap.org/img/wn/04d@2x.png --}}
+    <!-- footer code -->
+   {{>footer}}  
+    {{!-- JQuery --}}
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./js/Script.js"></script>
+    <script type="text/javascript" src="./js/ScriptLocation.js"></script>
+</body>
+</html>
+
+
+
