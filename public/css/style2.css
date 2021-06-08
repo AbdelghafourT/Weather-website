@@ -211,7 +211,7 @@ h5:hover{
     justify-content: center;
     justify-content: space-around;
 }
-#wind-N ,#hum-N,#Uv-index{
+#wind-N ,#hum-N,#Cloud-N{
     color: #fff;
     margin-top: 5px;
     margin-right: 10px;

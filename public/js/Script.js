@@ -14,8 +14,8 @@ var  btn_sunrise = $(".sunrise");
 var  wind = $("#wind-N");
 var hum = $("#hum-N");
 var dailyTemp = $(".m-Min p");
-// var cloude = $("#Cloud-N");
-var UVIndex = $("#Uv-index");
+var cloude = $("#Cloud-N");
+// var UVIndex = $("#Uv-index");
 var visibility = $("#Visble-N");
 var sunS =  $("#sun");
 var risE =  $("#rise");
@@ -74,8 +74,8 @@ function currentWeather(city){
        humiDtiy = response.main.humidity;
        $(hum).html(humiDtiy+"%");
 
-    //    clouds = response.clouds.all;
-    //    $(cloude).html(clouds+"%");
+        clouds = response.clouds.all;
+        $(cloude).html(clouds+"%");
 
        visiBility = response.visibility;
        $(visibility).html(visiBility +"km/h");
@@ -86,7 +86,7 @@ function currentWeather(city){
        $(risE).html(sunri);
         // Display UVIndex.
         //By Geographic coordinates method and using appid and coordinates as a parameter we are going build our uv query url inside the function below.
-        UvIndex(response.coord.lon,response.coord.lat);
+        // UvIndex(response.coord.lon,response.coord.lat);
        forecast(response.id);
   const DAYS = {
   0: "Sunday",
@@ -98,16 +98,16 @@ function currentWeather(city){
   6:"Saturday",
 };
 // This function returns the UVIindex response.
-function UvIndex(ln,lt){
-    //lets build the url for uvindex.
-    var uvqURL="https://api.openweathermap.org/data/2.5/uvi?appid="+ APIKey+"&lat="+lt+"&lon="+ln;
-    $.ajax({
-            url:uvqURL,
-            method:"GET"
-            }).then(function(response){
-                $(UVIndex).html(response.value);
-            });
-}    
+// function UvIndex(ln,lt){
+//     //lets build the url for uvindex.
+//     var uvqURL="https://api.openweathermap.org/data/2.5/uvi?appid="+ APIKey+"&lat="+lt+"&lon="+ln;
+//     $.ajax({
+//             url:uvqURL,
+//             method:"GET"
+//             }).then(function(response){
+//                 $(UVIndex).html(response.value);
+//             });
+// }    
 // Here we display the 5 days forecast for the current city.
 function forecast(cityid){
     var dayover= false;
