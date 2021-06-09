@@ -146,7 +146,7 @@ function dateBuilder(d) {
 
   function extractTime(timestamp){
       var dat = new Date(timestamp * 1000);
-      var h =dat.getHours() % 24; 
+      var h =dat.getHours() + 1 % 24; 
       var m =dat.getMinutes();
       return ((h < 10 ? '0' + h:h)+':'+(m < 10 ? '0' + m:m));
     }
