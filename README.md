@@ -1,3 +1,5 @@
 # Weather-website 
 RUN PROJET :
-node src/app.js
+*open terminal: and type 
+==> cd expressWeb
+==> node src/app.js
